@@ -10,9 +10,19 @@ To get a local copy up and running, follow these simple steps.
 
 ### Installation
 
-1. Clone the repo
+1. The expected NodeJS version for development is specified in the [`.node-version`](./.node-version) file. Ensure you're using the correct NodeJS version:
 
-2. Install NPM packages
+```sh
+# if you use nvm
+nvm use
+
+# if you use n
+n auto
+```
+
+2. Clone the repo
+
+3. Install NPM packages
 
 ```sh
 npm install
