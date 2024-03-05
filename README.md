@@ -1,8 +1,27 @@
-# React + Vite
+# Trivia Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About The Project
 
-Currently, two official plugins are available:
+Trivia Explorer is a web application for browsing and exploring a variety of trivia questions. This project is built using [React](https://react.dev/) and powered by [Vite](https://vitejs.dev/) for an optimal developer experience with features like HMR (Hot Module Replacement).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Installation
+
+1. Clone the repo
+
+2. Install NPM packages
+
+```sh
+npm install
+```
+
+### Usage
+
+To start the project, run the following command in your terminal:
+
+```sh
+npm run dev
+```
