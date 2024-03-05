@@ -35,3 +35,13 @@ To start the project, run the following command in your terminal:
 ```sh
 npm run dev
 ```
+
+## Available Scripts
+
+In the project directory, you can run:
+
+- `npm run dev`: runs the app in the development mode using Vite.
+- `npm run build`: builds the app for production to the `dist` folder using Vite.
+- `npm run lint`: lints the project files using ESLint with specified extensions and rules.
+- `npm run preview`: serves the production build locally for preview.
+- `npm run prettify`: formats the code using Prettier based on the project's configuration.
