@@ -1,6 +1,6 @@
 export const API_URL = 'https://opentdb.com/api.php'
 
-export const API_AMOUNT = 25
+export const API_AMOUNT = 10
 
 export const TOTAL_QUESTIONS = 4146
 
