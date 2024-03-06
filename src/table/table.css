@@ -1,0 +1,22 @@
+.table {
+  position: relative;
+  min-height: 120px;
+
+  &__loader {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 24px;
+
+    backdrop-filter: blur(10px);
+  }
+}

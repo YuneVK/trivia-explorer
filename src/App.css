@@ -4,6 +4,7 @@
   margin: 0 auto;
 
   &__title {
+    margin: 32px 0;
     font-size: 32px;
   }
 }
