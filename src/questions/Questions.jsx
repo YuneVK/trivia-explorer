@@ -35,9 +35,9 @@ function Questions() {
             </tr>
           </thead>
           <tbody>
-            {data.map((question, index) => (
-              <tr key={`question-${index}`}>
-                <td>{index}</td>
+            {data.map((question) => (
+              <tr key={`question-${question.id}`}>
+                <td>{question.id}</td>
                 <td>{question.category}</td>
                 <td>{TYPES[question.type]}</td>
                 <td>{DIFFICULTIES[question.difficulty]}</td>

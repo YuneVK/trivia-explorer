@@ -1,11 +1,12 @@
 import { useQuery } from 'react-query'
 
 import fetchTriviaQuestions from './fetchTriviaQuestions'
+import { ORDERS } from './constants'
 
-const useTriviaQuestions = (page = 1, order = 'asc') => {
+const useTriviaQuestions = (page = 1, order = ORDERS.asc) => {
   return useQuery(
     ['triviaQuestions', page, order],
-    () => fetchTriviaQuestions(),
+    () => fetchTriviaQuestions(page, order),
     {
       keepPreviousData: true,
       refetchOnWindowFocus: false,
