@@ -9,6 +9,7 @@ const useTriviaQuestions = (page = 1, order = ORDERS.asc) => {
     () => fetchTriviaQuestions(page, order),
     {
       keepPreviousData: true,
+      staleTime: Infinity,
       refetchOnWindowFocus: false,
       refetchOnReconnect: false,
       retryDelay: 5000,
