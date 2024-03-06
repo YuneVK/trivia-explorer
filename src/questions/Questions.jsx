@@ -3,16 +3,27 @@ import { useState } from 'react'
 import useTriviaQuestions from './useTriviaQuestions'
 import Pagination from './pagination'
 
-import { TYPES, DIFFICULTIES } from './constants'
+import { TYPES, DIFFICULTIES, ORDERS } from './constants'
+
+import SortAscendingIcon from '../icons/SortAscending'
+import SortDescendingIcon from '../icons/SortDescending'
 
 import './questions.css'
 
 function Questions() {
   const [currentPage, setCurrentPage] = useState(1)
-  const { data, isFetching, isError } = useTriviaQuestions(currentPage)
+  const [order, setOrder] = useState(ORDERS.asc)
+
+  const { data, isFetching, isError } = useTriviaQuestions(currentPage, order)
 
   const handlePageChange = (newPage) => {
     setCurrentPage(newPage)
+  }
+
+  const toggleOrder = () => {
+    setOrder((prevOrder) =>
+      prevOrder === ORDERS.asc ? ORDERS.desc : ORDERS.asc,
+    )
   }
 
   return (
@@ -33,7 +44,18 @@ function Questions() {
         <table className="questions__list">
           <thead>
             <tr>
-              <th>ID</th>
+              <button
+                className="questions__order-button"
+                onClick={toggleOrder}
+                aria-label={`Sort by ID in ${order === ORDERS.asc ? 'descending' : 'ascending'} order`}
+              >
+                ID
+                {order === ORDERS.asc ? (
+                  <SortAscendingIcon />
+                ) : (
+                  <SortDescendingIcon />
+                )}
+              </button>
               <th>Category</th>
               <th>Type</th>
               <th>Difficulty</th>

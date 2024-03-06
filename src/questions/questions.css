@@ -32,6 +32,10 @@
       border-collapse: collapse;
     }
 
+    & tr {
+      min-height: 40px;
+    }
+
     & th,
     & td {
       padding: 8px 12px;
@@ -39,6 +43,34 @@
 
     & thead {
       background-color: var(--color-neutral-dark);
+    }
+  }
+
+  &__order-button {
+    height: 40px;
+    padding: 8px 12px;
+
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+
+    background-color: transparent;
+    border: none;
+
+    font-size: 16px;
+    font-weight: 700;
+    color: inherit;
+
+    cursor: pointer;
+    transition: color var(--transition);
+
+    &:hover {
+      color: var(--color-primary);
+    }
+
+    & svg {
+      height: 16px;
+      width: 16px;
     }
   }
 }
