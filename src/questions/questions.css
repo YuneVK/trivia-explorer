@@ -1,4 +1,4 @@
-.table {
+.questions {
   position: relative;
   min-height: 120px;
 
@@ -18,5 +18,25 @@
     font-size: 24px;
 
     backdrop-filter: blur(10px);
+  }
+
+  &__list {
+    background-color: var(--color-neutral);
+
+    &,
+    & th,
+    & td {
+      border: 1px solid var(--color-neutral-light);
+      border-collapse: collapse;
+    }
+
+    & th,
+    & td {
+      padding: 8px 12px;
+    }
+
+    & thead {
+      background-color: var(--color-neutral-dark);
+    }
   }
 }
