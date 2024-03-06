@@ -45,3 +45,15 @@ In the project directory, you can run:
 - `npm run lint`: lints the project files using ESLint with specified extensions and rules.
 - `npm run preview`: serves the production build locally for preview.
 - `npm run prettify`: formats the code using Prettier based on the project's configuration.
+
+## Deployment
+
+This project is deployed to GitHub Pages using a GitHub Action. The deployment process is defined in the `.github/workflows/main.yml` file. This automates the build and deployment process every time changes are pushed to the `main` branch.
+
+## Roadmap
+
+- [ ] Update URL based on pagination and sorting state to enable link sharing and bookmarking.
+- [ ] Implement internationalization (i18n) to support multiple languages.
+- [ ] Add a search form to filter questions based on user queries.
+
+These tasks are identified as part of the ongoing development and enhancement of Trivia Explorer to improve user experience and application features.
