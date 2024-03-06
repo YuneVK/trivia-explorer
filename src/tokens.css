@@ -3,6 +3,7 @@
   --color-primary-light: #00dba3;
 
   --color-secondary: #383e4e;
+  --color-secondary-light: #5c6378;
   --color-secondary-dark: #262a35;
   --color-secondary-darkest: #00000099;
 
@@ -11,4 +12,6 @@
   --color-neutral-light: #464545;
   --color-neutral: #2c2c2c;
   --color-neutral-dark: #1b1b1b;
+
+  --transition: 0.3s ease-in-out;
 }

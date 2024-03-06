@@ -1,8 +1,11 @@
-import './App.css'
+import Navigation from './navigation'
+
+import './app.css'
 
 function App() {
   return (
     <>
+      <Navigation />
       <h1>Vite + React</h1>
     </>
   )
