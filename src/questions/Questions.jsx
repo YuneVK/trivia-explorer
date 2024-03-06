@@ -7,8 +7,6 @@ import './questions.css'
 function Questions() {
   const { data, isFetching, isError } = useTriviaQuestions()
 
-  console.log(data)
-
   return (
     <section className="questions">
       {isError && (
