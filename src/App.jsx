@@ -6,7 +6,10 @@ function App() {
   return (
     <>
       <Navigation />
-      <h1>Vite + React</h1>
+
+      <main className="app">
+        <h1 className="app__title">Browse Questions</h1>
+      </main>
     </>
   )
 }

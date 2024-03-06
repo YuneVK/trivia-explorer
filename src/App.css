@@ -1,0 +1,9 @@
+.app {
+  padding: 24px 40px;
+  max-width: 904px;
+  margin: 0 auto;
+
+  &__title {
+    font-size: 32px;
+  }
+}
