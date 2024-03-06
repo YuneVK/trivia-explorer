@@ -21,6 +21,8 @@
   }
 
   &__list {
+    margin-bottom: 40px;
+
     background-color: var(--color-neutral);
 
     &,

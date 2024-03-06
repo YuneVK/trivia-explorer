@@ -6,6 +6,8 @@ export const TOTAL_QUESTIONS = 4146
 
 export const TOTAL_PAGES = Math.ceil(TOTAL_QUESTIONS / API_AMOUNT)
 
+export const MAX_PAGE_BUTTONS = 5
+
 export const TYPES = {
   multiple: 'Multiple Choice',
   boolean: 'True / False',

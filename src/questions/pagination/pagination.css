@@ -1,0 +1,31 @@
+.pagination {
+  margin: 0 auto;
+  width: fit-content;
+
+  border-radius: 4px;
+
+  overflow: hidden;
+
+  &__button {
+    height: 56px;
+    width: 56px;
+
+    background-color: var(--color-primary-light);
+    border: none;
+    color: var(--color-white);
+    font-size: 16px;
+
+    cursor: pointer;
+
+    &:disabled {
+      background-color: var(--color-primary);
+
+      cursor: not-allowed;
+    }
+  }
+
+  &__icon {
+    height: 16px;
+    width: 16px;
+  }
+}

@@ -1,11 +1,19 @@
+import { useState } from 'react'
+
 import useTriviaQuestions from './useTriviaQuestions'
+import Pagination from './pagination'
 
 import { TYPES, DIFFICULTIES } from './constants'
 
 import './questions.css'
 
 function Questions() {
-  const { data, isFetching, isError } = useTriviaQuestions()
+  const [currentPage, setCurrentPage] = useState(1)
+  const { data, isFetching, isError } = useTriviaQuestions(currentPage)
+
+  const handlePageChange = (newPage) => {
+    setCurrentPage(newPage)
+  }
 
   return (
     <section className="questions">
@@ -47,6 +55,8 @@ function Questions() {
           </tbody>
         </table>
       ) : null}
+
+      <Pagination currentPage={currentPage} onPageChange={handlePageChange} />
     </section>
   )
 }
