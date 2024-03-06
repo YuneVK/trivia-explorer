@@ -2,7 +2,7 @@ import { QueryClient, QueryClientProvider } from 'react-query'
 import { ReactQueryDevtools } from 'react-query/devtools'
 
 import Navigation from './navigation'
-import Table from './table'
+import Questions from './questions'
 
 import './app.css'
 
@@ -16,7 +16,7 @@ function App() {
       <main className="app">
         <h1 className="app__title">Browse Questions</h1>
 
-        <Table />
+        <Questions />
       </main>
 
       {import.meta.env.DEV && <ReactQueryDevtools initialIsOpen={false} />}
